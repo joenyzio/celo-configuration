@@ -53,14 +53,14 @@
     },
     testnet: {
       provider: function() {
-        return new HDWalletProvider(MNEMONIC, "https://alfajores-forno.celo-testnet.org")
+        return new HDWalletProvider(mnemonic, "https://alfajores-forno.celo-testnet.org")
       },
       network_id: 44787,
       gas: 4000000      //make sure this gas allocation isn't over 4M, which is the max
     },
     mainnet: {
       provider: function() {
-        return new HDWalletProvider(MNEMONIC, "https://forno.celo.org")
+        return new HDWalletProvider(mnemonic, "https://forno.celo.org")
       },
       network_id: 42220,
       gas: 4000000      //make sure this gas allocation isn't over 4M, which is the max
