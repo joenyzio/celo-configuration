@@ -39,19 +39,19 @@
     //  You should run a client (like ganache-cli, geth or parity) in a separate terminal
     //  tab if you use this network and you must also set the `host`, `port` and `network_id`
     //  options below to some value.
-    private: {
+    local: {
       host: "127.0.0.1",
       port: 7545,
       network_id: "*"
     },
-    testnet: {
+    alfajores: {
       provider: function() {
         return new HDWalletProvider(mnemonic, "https://alfajores-forno.celo-testnet.org")
       },
       network_id: 44787,
       gas: 4000000      //make sure this gas allocation isn't over 4M, which is the max
     },
-    mainnet: {
+    celo: {
       provider: function() {
         return new HDWalletProvider(mnemonic, "https://forno.celo.org")
       },

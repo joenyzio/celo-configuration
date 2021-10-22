@@ -38,3 +38,10 @@ module.exports = {
   },
   solidity: "0.8.4",
 };
+
+
+local: {
+  host: "127.0.0.1",
+  port: 7545,
+  network_id: "*"
+},
